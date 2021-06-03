@@ -18,6 +18,8 @@ body{
 .panels{
     min-height: 100vh;
     overflow: hidden;
+    /* Added flex */
+    display: flex;
 }
 
 .panel{
@@ -33,6 +35,9 @@ body{
     font-size: 20px;
     background-size: cover;
     background-position: center;
+    /*Each pannel will evenly distibute among itself*/
+    flex: 1;
+    justify-content: center;
 }
 
 .panel1 { background-image:url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500); }
@@ -46,6 +51,7 @@ body{
     margin: 0;
     width: 100%;
     transition: transform 0.5s;
+    border: 1px solid red;
 }
 
 .panel p{
