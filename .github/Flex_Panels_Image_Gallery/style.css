@@ -5,3 +5,12 @@ html{
     font-size: 20px;
     font-weight: 200;
 }
+
+body{
+    margin: 0;
+}
+
+/* Will select all elements within that portion of the DOM */
+*,*:before,*:after{
+    box-sizing: inherit;
+}
