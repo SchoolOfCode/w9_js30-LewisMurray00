@@ -10,4 +10,14 @@ fetch(endpoint)
     .then(response => response.json())
     //pushes the data into the cities array, ... needed as its the spread
     .then(data => cities.push(...data));
-    
+
+function findMatches(wordToMatch, cities){
+    return cities.filter(place =>{
+        //figure out if the city or state matches what was searched
+        //ALlows us to add a variable into the expression
+        //Searches for the new word added in the string
+        const regex = new RegExp(wordToMatch, 'gi');
+        return place.city.match(regex) || place.state.match(regex);
+        
+    })
+}
