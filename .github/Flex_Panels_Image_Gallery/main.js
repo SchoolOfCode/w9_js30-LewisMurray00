@@ -1,7 +1,7 @@
-const panels = document.querySelectorAll('.panels');
+const panel = document.querySelectorAll('.panel');
 
 function toggleOpen(){
     this.classList.toggle('open')
 }
 
-panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+panel.forEach(panel => panel.addEventListener('click', toggleOpen));
