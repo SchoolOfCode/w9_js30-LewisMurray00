@@ -58,7 +58,13 @@ body{
     border: 1px solid red;
     /* seperates the words apart*/
     flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+/*Hides the top panel*/
+.panel > *:first-child{ transform: translateY(-100%)}
 
 .panel p{
     text-transform: uppercase;
