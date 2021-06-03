@@ -38,6 +38,10 @@ body{
     /*Each pannel will evenly distibute among itself*/
     flex: 1;
     justify-content: center;
+    align-items: center;
+    /* added flex to the items in panel*/
+    display: flex;
+    flex-direction: column;
 }
 
 .panel1 { background-image:url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500); }
@@ -52,6 +56,8 @@ body{
     width: 100%;
     transition: transform 0.5s;
     border: 1px solid red;
+    /* seperates the words apart*/
+    flex: 1 0 auto;
 }
 
 .panel p{
