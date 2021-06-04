@@ -10,3 +10,13 @@ html{
     border-radius: 5px;
     box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.1);
 }
+
+.item{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.item:last-child{
+    border-bottom: 0;
+}
