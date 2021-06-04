@@ -29,3 +29,14 @@ input:checked + p{
 input[type="checkbox"]{
     margin: 20px;
 }
+
+p{
+    margin: 0;
+    padding: 20px;
+    transition: background 0.2s;
+    flex: 1;
+    font-family: 'helvetica neue';
+    font-size: 20px;
+    font-weight: 200;
+    border-left: 1px solid #d1e2ff;
+}
