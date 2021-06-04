@@ -10,7 +10,7 @@ ctx.strokeStyle = '#BADA55'
 //if a line meets another it becomes rounded off
 ctx.lineJoin = 'round';
 ctx.lineCap = 'round';
-ctx.lineWidth = "100"
+ctx.lineWidth = "10"
 
 let isDrawing = false;
 let lastX = 0;
@@ -31,6 +31,9 @@ function draw(e){
     
     [lastX, lastY]=[e.offsetX, e.offsetY];
     hue++;
+    if(hue >= 360){
+        hue = 0;
+    }
 }
 
 canvas.addEventListener('mousedown', (e)=> {
