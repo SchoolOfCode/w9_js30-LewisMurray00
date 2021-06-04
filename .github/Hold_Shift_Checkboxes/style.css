@@ -20,3 +20,12 @@ html{
 .item:last-child{
     border-bottom: 0;
 }
+
+input:checked + p{
+    background: #f9f9f9;
+    text-decoration: line-through;
+}
+
+input[type="checkbox"]{
+    margin: 20px;
+}
